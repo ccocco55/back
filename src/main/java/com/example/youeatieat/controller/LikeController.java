@@ -29,7 +29,7 @@ public class LikeController {
         MemberDTO member = (MemberDTO) session.getAttribute("member");
         List<LikeDTO> likes = likeService.getLikeListByMemberId(member.getId());
         model.addAttribute("likes",likes);
-        return "/mypage/like-list";
+        return "mypage/like-list";
     }
     @PostMapping("delete")
     public ResponseEntity<?> deleteLike(@RequestBody LikeDTO likeDTO) {

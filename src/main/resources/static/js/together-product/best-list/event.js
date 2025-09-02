@@ -275,6 +275,7 @@ radios.forEach((radio) => {
             priceKeyword = null;
             search.priceKeyword = priceKeyword;
             await productListService.getList(page, layout.showProductList, search);
+            pagination.goToPage(1, search);
 
             // 태그 없을때
             noTag();

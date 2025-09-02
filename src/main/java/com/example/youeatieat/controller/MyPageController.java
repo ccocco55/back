@@ -27,31 +27,31 @@ public class MyPageController {
 
     @GetMapping("check")
     public String GoToCheck(){
-        return "/mypage/check";
+        return "mypage/check";
     }
 
     @GetMapping("review-list")
     public String GoToReview(){
-        return "/mypage/review-list";
+        return "mypage/review-list";
     }
     @GetMapping("order-detail")
     public String GoToOrderDetail() {
-        return "/mypage/order-detail";
+        return "mypage/order-detail";
     }
 
     @GetMapping("modify")
     public String GoToModify() {
         MemberDTO member = (MemberDTO) session.getAttribute("member");
         if(member.getMemberKakaoEmail()==null){
-            return "/mypage/modify";
+            return "mypage/modify";
         }
         else {
-            return "/mypage/kakao-modify";
+            return "mypage/kakao-modify";
         }
     }
     @GetMapping("subcribe")
     public String GoToSubcribe() {
-        return "/mypage/subcribe";
+        return "mypage/subcribe";
     }
     @PostMapping("kakao-modify")
     public String UpdateKakaoMember(MemberDTO memberDTO) {

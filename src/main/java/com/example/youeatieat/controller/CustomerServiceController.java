@@ -13,18 +13,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CustomerServiceController {
     @GetMapping("notice")
     public String GoToNotice() {
-        return "/buyer-customer-center/notice";
+        return "buyer-customer-center/notice";
     }
     @GetMapping("faq")
     public String GoToFaq() {
-        return "/buyer-customer-center/faq";
+        return "buyer-customer-center/faq";
     }
     @GetMapping("inquiry")
     public String GoToInquiry() {
-        return "/buyer-customer-center/inquiry";
+        return "buyer-customer-center/inquiry";
     }
     @GetMapping("inquiry-enroll")
     public String GoToInquiryEnroll() {
-        return "/buyer-customer-center/inquiry-enroll";
+        return "buyer-customer-center/inquiry-enroll";
     }
 }

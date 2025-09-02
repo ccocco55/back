@@ -37,7 +37,7 @@ public class CartController {
                 .sum();
         model.addAttribute("totalPrice", totalPrice);
         System.out.println(member);
-        return "/mypage/cart";
+        return "mypage/cart";
     }
 
 //    @PostMapping("cart")

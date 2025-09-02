@@ -39,7 +39,7 @@ public class MemberController {
     @GetMapping("signup-guide")
     public String goToSingUpGuide(MemberDTO memberDTO, Model model) {
         model.addAttribute("memberDTO", memberDTO);
-        return "/member/signup-guide";
+        return "member/signup-guide";
     }
 
     @PostMapping("signup")
@@ -64,7 +64,7 @@ public class MemberController {
     @GetMapping("login")
     public String goToLoginForm(MemberDTO memberDTO, Model model){
         model.addAttribute("memberDTO", memberDTO);
-        return "/member/login";
+        return "member/login";
     }
 
     @PostMapping("login")
@@ -73,12 +73,12 @@ public class MemberController {
         Optional<MemberDTO> optionalMember = memberService.login(memberDTO);
         if (optionalMember.isEmpty()) {
             redirectAttributes.addFlashAttribute("loginError", "아이디 또는 비밀번호가 틀렸습니다.");
-            return new RedirectView("/member/login");
+            return new RedirectView("member/login");
         }
         MemberDTO member = optionalMember.get();
         session.setAttribute("member", member);
         if (member.getMemberRole() == ADMIN) {
-        return new RedirectView("/admin");
+        return new RedirectView("admin");
         }
         return new RedirectView("/");
     }

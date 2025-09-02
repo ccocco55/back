@@ -21,9 +21,15 @@ select
 from tbl_product p
          join tbl_member m on p.member_id = m.id
          join tbl_main_category mc on p.main_category_id = mc.id
-         left join tbl_sub_category sc
+         left join(
+    SELECT main_category_id, sub_category_name, MIN(id) AS id
+    FROM tbl_sub_category
+    GROUP BY main_category_id, sub_category_name
+) sc
                    on sc.main_category_id = mc.id
                        and sc.sub_category_name = p.sub_category_name;
+
+
 
 select * from view_product_detail ;
 

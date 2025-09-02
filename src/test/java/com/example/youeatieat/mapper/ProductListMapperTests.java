@@ -1,6 +1,7 @@
 package com.example.youeatieat.mapper;
 
 
+import com.example.youeatieat.dto.ProductDTO;
 import com.example.youeatieat.util.Criteria;
 import com.example.youeatieat.util.Search;
 import lombok.ToString;
@@ -11,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 @SpringBootTest
 @Slf4j
@@ -45,6 +47,14 @@ public class ProductListMapperTests {
         System.out.println(search.getPriceKeyword());
 
         System.out.println(categoriesProductMapper.selectList(criteria, search, 1L));
+    }
+
+    @Test
+    public void testSelectAll4() {
+        Criteria criteria = new Criteria(5, 43);
+        Search search = new Search();
+        List<ProductDTO> products = productMapper.selectList(criteria, search);
+        products.stream().map(ProductDTO::getId).forEach(System.out::println);
     }
 
 //    @Autowired

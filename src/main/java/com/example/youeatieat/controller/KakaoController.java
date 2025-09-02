@@ -39,7 +39,7 @@ public class KakaoController {
 //
        if(foundKakaoMember.isEmpty()) {
             redirectAttributes.addFlashAttribute("kakaoEmail", member.getMemberKakaoEmail());
-            return new RedirectView("/kakao/signup");
+            return new RedirectView("kakao/signup");
         }
 
         session.setAttribute("member", foundKakaoMember.get());
@@ -50,7 +50,7 @@ public class KakaoController {
     @GetMapping("/signup")
     public String goToKakaoSignup(MemberDTO memberDTO, Model model) {
        model.addAttribute("memberDTO", memberDTO);
-       return "/member/kakao-signup";
+       return "member/kakao-signup";
     }
 
     @PostMapping("/signup")

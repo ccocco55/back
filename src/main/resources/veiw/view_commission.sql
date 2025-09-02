@@ -19,4 +19,4 @@ from
     tbl_group g on r.group_index_number = g.group_index_number and r.product_id = g.product_id
     );
 
-select * from view_recent_member_product;
+select * from view_commission_request_group;

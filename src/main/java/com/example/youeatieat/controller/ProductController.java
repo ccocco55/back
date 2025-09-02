@@ -39,13 +39,13 @@ public class ProductController {
         model.addAttribute("member", memberDTO);
 
         System.out.println(memberDTO);
-        return "/together-product/list";
+        return "together-product/list";
     }
 
 //    베스트 목록으로 이동
     @GetMapping("best-list")
     public String bestList() {
-    return "/together-product/best-list";
+    return "together-product/best-list";
     }
 
     //    카테고리별 목록으로 이동
@@ -61,7 +61,7 @@ public class ProductController {
 
         model.addAttribute("category", category);
 
-        return "/together-product/by-category-list";
+        return "together-product/by-category-list";
     }
 
 
@@ -91,7 +91,7 @@ public class ProductController {
         }
         model.addAttribute("liked", liked);
 
-        return "/together-product/detail";
+        return "together-product/detail";
     }
 
 //    banner
@@ -101,7 +101,7 @@ public class ProductController {
         List<BannerWithFileDTO> banners = adminBannerService.getBannerFiles();
 //        banners.forEach(b -> System.out.println("배너ID=" + b.getBannerId() + ", files=" + b.getFiles()));
         model.addAttribute("banners", banners);
-        return "/together-product/banner";
+        return "together-product/banner";
     }
 
 }

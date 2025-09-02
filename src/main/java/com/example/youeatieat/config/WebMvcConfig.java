@@ -13,7 +13,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .addPathPatterns("/like/**")
                 .addPathPatterns("/cart/**")
                 .addPathPatterns("/request/**")
-                .addPathPatterns("/mypage/**");
+                .addPathPatterns("/mypage/**")
+                .addPathPatterns("/admin/**");
 
     }
 }

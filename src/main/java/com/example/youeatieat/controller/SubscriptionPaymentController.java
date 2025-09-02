@@ -27,7 +27,7 @@ public class SubscriptionPaymentController {
         subscriptionPaymentDTO.setMemberId(member.getId());
 
         subscriptionPaymentService.addSubscriptionPayment(subscriptionPaymentDTO);
-        return "/together-product/subscription-ok";
+        return "together-product/subscription-ok";
     }
 
 }

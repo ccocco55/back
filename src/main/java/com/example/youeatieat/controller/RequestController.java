@@ -28,7 +28,7 @@ public class RequestController {
         }
         model.addAttribute("requestsCriteriaDTO", requestService.getList(page, search));
         model.addAttribute("search", search);
-        return "/mypage/request";
+        return "mypage/request";
     }
 
     @PostMapping("/cart")
