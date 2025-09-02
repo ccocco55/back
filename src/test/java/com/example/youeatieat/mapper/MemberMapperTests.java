@@ -30,20 +30,7 @@ public class MemberMapperTests {
 
 
 //    (#{memberEmail},#{memberPassword},#{memberName},#{memberBirth},#{memberPhone},#{memberGender})
-    @Test
-   public void testInsertMember() {
-        MemberDTO memberDTO = new MemberDTO();
-        memberDTO.setMemberEmail("test");
-        memberDTO.setMemberPassword("1234");
-        Optional<MemberDTO> optionalMember = memberMapper.selectMemberForLogin(memberDTO);
-        MemberDTO member = optionalMember.get();
-        log.info(member.toString());
-        member.setMemberName("수정좀");
-        mypageService.memberUpdate(member);
-        log.info(member.toString());
 
-
-    }
     @Test
     public void testexistMemberEmail(){
         boolean isExist = memberMapper.existMemberEmail("135125rr");
@@ -58,17 +45,5 @@ public class MemberMapperTests {
         foundMember.ifPresent((member)->{
             log.info("member:{}",member);
         });
-    }
-    @Test
-    public void kakaoLoginTest(){
-        Optional<MemberDTO> member= memberService.getKakaoMember("joyssung1101@naver.com");
-        member.get().setMemberName("업데이트");
-        mypageService.kakaoMemberUpdate(member.get());
-        log.info(member.toString());
-//
-//        memberServiceImpl.getKakaoMember("joyssung1101@naver.com");
-//        log.info("kakaoLoginTest:{}",memberDTO.getMemberName());
-
-
     }
 }

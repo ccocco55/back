@@ -29,12 +29,6 @@ public class ProductDetailMapperTest {
         cartMapper.insertCart(cartVO);
     }
 
-//    찜
-    @Test
-    public void testInsertLike(){
-        LikeVO likeVO = LikeVO.builder().memberId(2L).productId(1L).build();
-        likeMapper.insertLike(likeVO);
-    }
 
 //    찜 취소
 

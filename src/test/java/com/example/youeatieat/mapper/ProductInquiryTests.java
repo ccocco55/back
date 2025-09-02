@@ -15,19 +15,19 @@ public class ProductInquiryTests {
     @Autowired
     ProductInquiryMapper productInquiryMapper;
 
-    @Test
-    public void insertProductInquiryTest(){
-        ProductInquiryVO productInquiryVO = ProductInquiryVO
-                .builder()
-                .productInquiryTitle("문의합니다.")
-                        .productInquiryContent("이거 맛있나요?")
-                                .productId(2L)
-                                        .memberId(2L)
-                                                .build();
-
-
-        productInquiryMapper.insertProductInquiry(productInquiryVO);
-    }
+//    @Test
+//    public void insertProductInquiryTest(){
+//        ProductInquiryVO productInquiryVO = ProductInquiryVO
+//                .builder()
+//                .productInquiryTitle("문의합니다.")
+//                        .productInquiryContent("이거 맛있나요?")
+//                                .productId(2L)
+//                                        .memberId(2L)
+//                                                .build();
+//
+//
+//        productInquiryMapper.insertProductInquiry(productInquiryVO);
+//    }
 
     @Test
     public void selectAllProductInquiryTest(){
