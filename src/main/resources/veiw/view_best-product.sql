@@ -22,11 +22,7 @@ select
 from tbl_product p
          join tbl_member m on p.member_id = m.id
          join tbl_main_category mc on p.main_category_id = mc.id
-         left join (
-            select main_category_id, sub_category_name, min(id) AS id
-            from tbl_sub_category
-            group by main_category_id, sub_category_name
-        ) sc
+         left join tbl_sub_category sc
                    on sc.main_category_id = mc.id
                        and sc.sub_category_name = p.sub_category_name
          left join (
