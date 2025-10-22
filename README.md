@@ -45,13 +45,6 @@
 -   Thymeleaf
 -   Lombok
 
-### Frontend
-
--   Html
--   JavaScript
--   Css
--   TymeLeaf
-
 ### Database
 
 -   MyBatis
@@ -70,7 +63,6 @@
 
 ### Tool
 
--   Visual Studio Code
 -   IntelliJ IDEA
 -   DBeaver
 -   Git / GitHub / Sourcetree
@@ -91,8 +83,6 @@
 ## 5. 👩‍💻 담당 업무
 
 <img width="922" height="400" alt="image" src="https://github.com/user-attachments/assets/076997f7-fd9a-4518-9c95-38fb1033772a" />
-
-### 5-1. 백 엔드
 
 ▶ 상품목록
 
