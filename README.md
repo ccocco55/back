@@ -11,6 +11,7 @@
 소비자가 필요한 만큼 신선한 농산물을 합리적으로 구매할 수 있도록 돕고,  
 동시에 농부에게는 안정적인 판로를 제공하여 모두가 지속 가능한 유통 구조를 만들어가는 서비스를 기획 했습니다.
 
+---
 ## 💡 기대 효과
 
 <img width="975" height="541" alt="image" src="https://github.com/user-attachments/assets/188d18f6-2e4b-4f25-932f-48731328b900" />
@@ -35,7 +36,7 @@
 
 ---
 
-## 🧰 프로젝트 사용 툴
+## 2. 🧰 프로젝트 사용 툴
 
 ### Backend
 
@@ -82,15 +83,16 @@
 
 ---
 
-## 🗂 ERD (Entity Relationship Diagram)
+## 3. 🗂 ERD (Entity Relationship Diagram)
 
 <img width="4636" height="4940" alt="KakaoTalk_20251021_155051881" src="https://github.com/user-attachments/assets/3f831e1f-80cf-4030-9137-2dc8ccbe7629" />
 
-## 👩‍💻 담당 업무
+---
+## 4. 👩‍💻 담당 업무
 
 <img width="922" height="400" alt="image" src="https://github.com/user-attachments/assets/076997f7-fd9a-4518-9c95-38fb1033772a" />
 
-### 5-1. 백 엔드
+### 4-1. 백 엔드
 
 ▶ 상품목록
 
@@ -115,7 +117,8 @@
 -   재로그인
 -   비밀번호 수정
 
-## 6-3. 총평
+---
+## 5. 총평
 
 🌟 기획 : "대략"은 실패의 시작
 
