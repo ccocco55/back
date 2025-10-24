@@ -50,6 +50,9 @@
 -   MyBatis
 -   MySQL
 
+### HTML Engine
+- Thymeleaf
+
 ### Infra
 
 -   AWS EC2
