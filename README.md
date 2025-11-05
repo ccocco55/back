@@ -38,44 +38,15 @@
 
 ## 3. 🧰 프로젝트 사용 툴
 
-### Backend
-
--   Spring Boot
--   Java
--   Thymeleaf
--   Lombok
-
-### Database
-
--   MyBatis
--   MySQL
-
-### HTML Engine
-- Thymeleaf
-
-### Infra
-
--   AWS EC2
-
-### External APIs
-
--   Kakao Login
--   Kakao Daum Postcode API
--   Boot Pay API
--   REST API
-
-### Tool
-
--   IntelliJ IDEA
--   DBeaver
--   Git / GitHub / Sourcetree
--   Slack
--   PostMan
-
-### Test
-
--   Junit5
-
+| 구분             | 사용 기술                                                                                   |
+|------------------|----------------------------------------------------------------------------------------------|
+| 🧩 Backend        | Spring Boot, Java ,Lombok
+| 🗄️ Database       | MyBatis, MySQL                                        |
+| 🧱 HTML Engine    | Thymeleaf                                                                                    |
+| ☁️ Cloud          |  AWS EC2                                                                     |
+| 🌐 External APIs  | Boot Pay API, REST API<br>Kakao Developer API<br>Kakao Daum Postcode API
+| 🧰 Tools          | IntelliJ IDEA, DBeaver<br>Git / GitHub / Sourcetree<br>Slack, Postman                        |
+| 🧪 Test           | JUnit5                                                                                       |
 ---
 
 ## 4. 🗂 ERD (Entity Relationship Diagram)
